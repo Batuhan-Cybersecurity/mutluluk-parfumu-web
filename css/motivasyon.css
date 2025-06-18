@@ -1,0 +1,63 @@
+/* Motivasyon Sayfası Özel Stilleri */
+.quote-section {
+    padding: 2rem;
+    background-color: #faf5e4;
+}
+
+.quote-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.quote-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-left: 4px solid var(--secondary-color);
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+}
+
+.quote-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.quote-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.quote-author {
+    font-style: italic;
+    text-align: right;
+    color: var(--accent-color);
+    font-weight: 500;
+}
+
+.share-btn {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.share-btn:hover {
+    background: #1e6b5e;
+}
+
+@media (max-width: 768px) {
+    .quote-container {
+        grid-template-columns: 1fr;
+    }
+}

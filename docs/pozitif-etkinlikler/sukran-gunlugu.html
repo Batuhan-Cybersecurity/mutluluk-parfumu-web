@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Şükran Günlüğü</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/sukran-gunlugu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Sükran Günlüğü</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li class="dropdown">
+                <a href="../proje-hakkında.html" class="dropdown-btn">Proje Hakkında <i class="fas fa-chevron-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="../proje-hakkında/proje-hakkında.html">Proje Hakkında</a>
+                    <a href="../proje-hakkında/kadromuz.html">Kadromuz</a>
+                    <a href="../proje-hakkında/iletisim.html">İletişim</a>
+                </div>
+            </li>
+            <li><a href="../../index.html">Mutluluk Rehberi</a></li>
+            <li class="dropdown">
+                <a href="../etkinlikler.html" class="active" class="dropdown-btn">Pozitif Etkinlikler <i class="fas fa-chevron-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="pozitif-parfum.html">Pozitif Parfüm</a>
+                    <a href="iyimserlik-kavanozu.html">İyimserlik Kavonozu</a>
+                    <a href="sukran-gunlugu.html">Sükran Günlüğü</a>
+                    <a href="pozitif-duygular-ajandasi.html">Pozitif Duygular Ajandası</a>
+                    <a href="motivasyon.html">Motivasyon</a>
+                </div>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="gratitude-container">
+            <h2>Bugün Neye Şükrediyorsun?</h2>
+            <textarea id="gratitudeInput" placeholder="Bugün minnettar olduğun bir şeyi yaz..."></textarea>
+            <button onclick="addGratitude()" class="btn">Kaydet</button>
+
+            <ul id="gratitudeList" class="gratitude-list"></ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Bu web sitesi <a href="https://www.linkedin.com/in/batuhan-duman-3b245b316/" target="_blank" class="footer-link">Batuhan Duman</a> tarafından yapılmıştır.</p>
+    </footer>
+
+    <script src="../../js/sukran-gunlugu.js"></script>
+
+</body>
+</html>

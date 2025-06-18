@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pozitif Duygular Ajandası</title>
+    <link rel="stylesheet" href="../../css/pozitif-duygular-ajandası.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>POZİTİF DUYGULAR AJANDASI</h1>
+        <p>Her gün bir tanesi seç, uygula ve uyguladıkça işaretle!</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li class="dropdown">
+                <a href="../proje-hakkında.html" class="dropdown-btn">Proje Hakkında <i class="fas fa-chevron-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="../proje-hakkında/proje-hakkında.html">Proje Hakkında</a>
+                    <a href="../proje-hakkında/kadromuz.html">Kadromuz</a>
+                    <a href="../proje-hakkında/iletisim.html">İletişim</a>
+                </div>
+            </li>
+            <li><a href="../../index.html">Mutluluk Rehberi</a></li>
+            <li class="dropdown">
+                <a href="../etkinlikler.html" class="active" class="dropdown-btn">Pozitif Etkinlikler <i class="fas fa-chevron-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="pozitif-parfum.html">Pozitif Parfüm</a>
+                    <a href="iyimserlik-kavanozu.html">İyimserlik Kavonozu</a>
+                    <a href="sukran-gunlugu.html">Sükran Günlüğü</a>
+                    <a href="pozitif-duygular-ajandasi.html">Pozitif Duygular Ajandası</a>
+                    <a href="motivasyon.html">Motivasyon</a>
+                </div>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="todo-section">
+            <h2>Bugünün Pozitif Görevi</h2>
+
+            <div class="todo-controls">
+                <input type="text" id="taskInput" placeholder="Özel görev ekle...">
+                <button class="btn" onclick="addCustomTask()"><i class="fas fa-plus"></i> Ekle</button>
+            </div>
+
+            <div class="guide-grid" id="taskContainer">
+                <!-- İlk 6 görev -->
+                <div class="guide-card" onclick="toggleTask(this)">
+                    <h3>1. İki saat telefondan uzak dur</h3>
+                    <div class="task-meta">
+                        <span class="task-status"><i class="far fa-circle"></i></span>
+                    </div>
+                </div>
+
+                <div class="guide-card" onclick="toggleTask(this)">
+                    <h3>2. Günlük yaz</h3>
+                    <div class="task-meta">
+                        <span class="task-status"><i class="far fa-circle"></i></span>
+                    </div>
+                </div>
+
+                <div class="guide-card" onclick="toggleTask(this)">
+                    <h3>3. Sabah çayını/kahveni açık havada/balkonda iç</h3>
+                    <div class="task-meta">
+                        <span class="task-status"><i class="far fa-circle"></i></span>
+                    </div>
+                </div>
+
+                <div class="guide-card" onclick="toggleTask(this)">
+                    <h3>4. Müzik eşliğinde 5 dakika dans et</h3>
+                    <div class="task-meta">
+                        <span class="task-status"><i class="far fa-circle"></i></span>
+                    </div>
+                </div>
+
+                <div class="guide-card" onclick="toggleTask(this)">
+                    <h3>5. Görüşmeyi ertelediğin bir arkadaşını ara</h3>
+                    <div class="task-meta">
+                        <span class="task-status"><i class="far fa-circle"></i></span>
+                    </div>
+                </div>
+
+                <div class="guide-card" onclick="toggleTask(this)">
+                    <h3>6. İyi olduğun 3 şeyi yaz</h3>
+                    <div class="task-meta">
+                        <span class="task-status"><i class="far fa-circle"></i></span>
+                    </div>
+                </div>
+
+                <!-- 7-13 arası görevler -->
+                <div class="guide-card" onclick="toggleTask(this)">
+                    <h3>7. Odanın bir kısmını düzenle</h3>
+                    <div class="task-meta">
+                        <span class="task-status"><i class="far fa-circle"></i></span>
+                    </div>
+                </div>
+
+                <div class="guide-card" onclick="toggleTask(this)">
+                    <h3>8. Açık havada 20 dk yürüyüş yap</h3>
+                    <div class="task-meta">
+                        <span class="task-status"><i class="far fa-circle"></i></span>
+                    </div>
+                </div>
+
+                <div class="guide-card" onclick="toggleTask(this)">
+                    <h3>9. Kitabından bir bölüm oku</h3>
+                    <div class="task-meta">
+                        <span class="task-status"><i class="far fa-circle"></i></span>
+                    </div>
+                </div>
+
+                <div class="guide-card" onclick="toggleTask(this)">
+                    <h3>10. Bir başkasına iyi gelecek bir şey yap</h3>
+                    <div class="task-meta">
+                        <span class="task-status"><i class="far fa-circle"></i></span>
+                    </div>
+                </div>
+
+                <div class="guide-card" onclick="toggleTask(this)">
+                    <h3>11. Sosyal medyadan bir gün boyunca uzak dur</h3>
+                    <div class="task-meta">
+                        <span class="task-status"><i class="far fa-circle"></i></span>
+                    </div>
+                </div>
+
+                <div class="guide-card" onclick="toggleTask(this)">
+                    <h3>12. Komik bir video/film/dizi izle</h3>
+                    <div class="task-meta">
+                        <span class="task-status"><i class="far fa-circle"></i></span>
+                    </div>
+                </div>
+
+                <div class="guide-card" onclick="toggleTask(this)">
+                    <h3>13. Bir gün hiç şikayet etmeden geçir</h3>
+                    <div class="task-meta">
+                        <span class="task-status"><i class="far fa-circle"></i></span>
+                    </div>
+                </div>
+
+                <!-- 14. Görev (YouTube bağlantılı) -->
+                <div class="guide-card" onclick="toggleTask(this)">
+                    <h3>14. Nefes egzersizi yap</h3>
+                    <div class="task-meta">
+                        <span class="task-status"><i class="far fa-circle"></i></span>
+                    </div>
+                    <a href="https://www.youtube.com/watch?v=dMwHumlgo8M&feature=youtu.be" class="task-link" target="_blank" onclick="event.stopPropagation()">
+                        <i class="fab fa-youtube"></i> Nefes egzersizi rehberi
+                    </a>
+                </div>
+
+                <!-- 15. Görev (YouTube bağlantılı) -->
+                <div class="guide-card" onclick="toggleTask(this)">
+                    <h3>15. Kas gevşetme egzersizi yap</h3>
+                    <div class="task-meta">
+                        <span class="task-status"><i class="far fa-circle"></i></span>
+                    </div>
+                    <a href="https://www.youtube.com/watch?v=XtAFIlB54N8&feature=youtu.be" class="task-link" target="_blank" onclick="event.stopPropagation()">
+                        <i class="fab fa-youtube"></i> Kas gevşetme rehberi
+                    </a>
+                </div>
+
+                <!-- 16-21 arası görevler -->
+                <div class="guide-card" onclick="toggleTask(this)">
+                    <h3>16. Kendini ödüllendir. Kendine sevdiğin bir şey al</h3>
+                    <div class="task-meta">
+                        <span class="task-status"><i class="far fa-circle"></i></span>
+                    </div>
+                </div>
+
+                <div class="guide-card" onclick="toggleTask(this)">
+                    <h3>17. Deniz kenarında vakit geçir</h3>
+                    <div class="task-meta">
+                        <span class="task-status"><i class="far fa-circle"></i></span>
+                    </div>
+                </div>
+
+                <div class="guide-card" onclick="toggleTask(this)">
+                    <h3>18. Kendine hayallerinle ilgili bir mektup yaz</h3>
+                    <div class="task-meta">
+                        <span class="task-status"><i class="far fa-circle"></i></span>
+                    </div>
+                </div>
+
+                <div class="guide-card" onclick="toggleTask(this)">
+                    <h3>19. Bir podcast keşfet ve dinle</h3>
+                    <div class="task-meta">
+                        <span class="task-status"><i class="far fa-circle"></i></span>
+                    </div>
+                </div>
+
+                <div class="guide-card" onclick="toggleTask(this)">
+                    <h3>20. Paylaşımları seni mutsuz eden sosyal medya hesaplarını takipten çık</h3>
+                    <div class="task-meta">
+                        <span class="task-status"><i class="far fa-circle"></i></span>
+                    </div>
+                </div>
+
+                <div class="guide-card" onclick="toggleTask(this)">
+                    <h3>21. Minnettar olduğun şeyleri listele</h3>
+                    <div class="task-meta">
+                        <span class="task-status"><i class="far fa-circle"></i></span>
+                    </div>
+                </div>
+
+                <!-- 22. Görev (Dış site bağlantılı) -->
+                <div class="guide-card" onclick="toggleTask(this)">
+                    <h3>22. Kendini tanımak için bir test yap</h3>
+                    <div class="task-meta">
+                        <span class="task-status"><i class="far fa-circle"></i></span>
+                    </div>
+                    <a href="https://www.analitist.com/enneagram-kisilik-testi?hl=tr" class="task-link" target="_blank" onclick="event.stopPropagation()">
+                        <i class="fas fa-external-link-alt"></i> Enneagram Kişilik Testi
+                    </a>
+                </div>
+
+                <!-- 23-30 arası görevler -->
+                <div class="guide-card" onclick="toggleTask(this)">
+                    <h3>23. Uzun zamandır vakit ayıramadığın bir hobine dön</h3>
+                    <div class="task-meta">
+                        <span class="task-status"><i class="far fa-circle"></i></span>
+                    </div>
+                </div>
+
+                <div class="guide-card" onclick="toggleTask(this)">
+                    <h3>24. Bir eşyanı bağışla</h3>
+                    <div class="task-meta">
+                        <span class="task-status"><i class="far fa-circle"></i></span>
+                    </div>
+                </div>
+
+                <div class="guide-card" onclick="toggleTask(this)">
+                    <h3>25. Yapmakta zorlandığın bir şey için güvendiğin birinden yardım iste</h3>
+                    <div class="task-meta">
+                        <span class="task-status"><i class="far fa-circle"></i></span>
+                    </div>
+                </div>
+
+                <div class="guide-card" onclick="toggleTask(this)">
+                    <h3>26. Birine iltifat et</h3>
+                    <div class="task-meta">
+                        <span class="task-status"><i class="far fa-circle"></i></span>
+                    </div>
+                </div>
+
+                <div class="guide-card" onclick="toggleTask(this)">
+                    <h3>27. Haftanı planla</h3>
+                    <div class="task-meta">
+                        <span class="task-status"><i class="far fa-circle"></i></span>
+                    </div>
+                </div>
+
+                <div class="guide-card" onclick="toggleTask(this)">
+                    <h3>28. Bugün iyi olan şeyleri yaz</h3>
+                    <div class="task-meta">
+                        <span class="task-status"><i class="far fa-circle"></i></span>
+                    </div>
+                </div>
+
+                <div class="guide-card" onclick="toggleTask(this)">
+                    <h3>29. Yatağa vaktinde gir</h3>
+                    <div class="task-meta">
+                        <span class="task-status"><i class="far fa-circle"></i></span>
+                    </div>
+                </div>
+
+                <div class="guide-card" onclick="toggleTask(this)">
+                    <h3>30. Son 30 günde öğrendiğin 3 şeyi yaz</h3>
+                    <div class="task-meta">
+                        <span class="task-status"><i class="far fa-circle"></i></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Bu web sitesi <a href="https://www.linkedin.com/in/batuhan-duman-3b245b316/" target="_blank" class="footer-link">Batuhan Duman</a> tarafından yapılmıştır.</p>
+    </footer>
+
+    <script src="../../js/pozitif-duygular-ajandasi.js"></script>
+
+</body>
+</html>

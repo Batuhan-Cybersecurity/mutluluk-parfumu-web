@@ -1,0 +1,54 @@
+.simple-activity-container {
+display: flex;
+justify-content: center;
+gap: 2rem;
+padding: 2rem;
+flex-wrap: wrap;
+}
+
+.simple-activity-card {
+width: 300px;
+background: white;
+border-radius: 10px;
+overflow: hidden;
+box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+transition: all 0.3s;
+text-align: center;
+}
+
+.simple-activity-card:hover {
+transform: translateY(-10px);
+box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+.simple-activity-img {
+height: 180px;
+background-size: cover;
+background-position: center;
+}
+
+.simple-activity-content {
+padding: 1.5rem;
+}
+
+.detail-btn {
+display: inline-block;
+background: var(--primary-color);
+color: white;
+padding: 0.6rem 1.5rem;
+border-radius: 5px;
+text-decoration: none;
+margin-top: 1rem;
+transition: background 0.3s;
+}
+
+.detail-btn:hover {
+background: #1e6b5e;
+}
+
+@media (max-width: 768px) {
+.simple-activity-container {
+flex-direction: column;
+align-items: center;
+}
+}
